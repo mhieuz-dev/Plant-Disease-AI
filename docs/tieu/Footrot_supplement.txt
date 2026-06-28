@@ -1,0 +1,135 @@
+HƯỚNG DẪN PHÒNG TRỪ BỆNH CHẾT NHANH HỒ TIÊU - FOOTROT
+(Phytophthora capsici)
+================================================================
+Nguồn tổng hợp:
+  - Dann EK et al. (2011). Phosphonate trials for Phytophthora Foot Rot of
+    Black Pepper. Australasian Plant Pathology, 40(3).
+    (Tài liệu Phosphonatetrials03235408.2011 trong hệ thống)
+  - Sarma YR, Anandaraj M (2000). Phytophthora Foot Rot of Black Pepper.
+    Plant Disease Management. (Tài liệu PhytophthorafootrotBlackPepper)
+  - Sở Nông nghiệp và PTNT tỉnh Bình Phước, Đắk Lắk — khuyến cáo
+    phòng trừ bệnh chết nhanh hồ tiêu (2021-2022).
+
+================================================================
+1. TÁC NHÂN GÂY BỆNH
+================================================================
+
+Bệnh chết nhanh hồ tiêu (Footrot, Thối cổ rễ) do nấm Phytophthora capsici
+gây ra (một số tài liệu gọi là P. heveae hay P. palmivora tùy chủng).
+
+Đây là bệnh NGUY HIỂM NHẤT trên hồ tiêu tại Việt Nam, gây chết cây
+hàng loạt nếu không xử lý kịp thời. Nấm sống lâu dài trong đất và nước
+ngầm, phát tán qua nước mưa, dụng cụ, giày dép, tay người canh tác.
+
+================================================================
+2. TRIỆU CHỨNG NHẬN BIẾT
+================================================================
+
+  - Cây héo rũ đột ngột, toàn bộ lá mất trương lực trong 1–3 ngày.
+  - Gốc cây và cổ rễ thối đen, bóc vỏ ra thấy mô gỗ nâu đen, ướt.
+  - Rễ con thối hết, mùi khó chịu.
+  - Cây chết hoàn toàn trong 3–7 ngày, không thể phục hồi.
+  - Các cây xung quanh tiếp theo bị lây trong vài ngày đến vài tuần.
+
+Phân biệt với bệnh chết chậm (Slow Decline):
+  - Chết nhanh: Cây héo toàn bộ trong < 1 tuần, gốc thối đen rõ ràng.
+  - Chết chậm: Cây vàng héo từ từ, kéo dài nhiều tháng đến nhiều năm.
+
+Phân biệt với bệnh thán thư (Pollu Disease):
+  - Thán thư: Chủ yếu gây đốm lá, rụng quả, không thối gốc.
+  - Chết nhanh: Thối gốc cấp tính, cây chết rất nhanh.
+
+================================================================
+3. ĐIỀU KIỆN PHÁT SINH VÀ LÂY LAN
+================================================================
+
+  - Mùa mưa (tháng 5–11) là giai đoạn nguy hiểm nhất.
+  - Đất ngập úng, thoát nước kém sau mưa lớn tạo điều kiện lý tưởng
+    cho nấm Phytophthora phát triển và lây lan.
+  - Nước chảy qua vườn từ ô nhiễm sang ô sạch.
+  - Dụng cụ canh tác (cuốc, xẻng) không vệ sinh.
+  - Mật độ trồng dày, che khuất thoáng khí.
+
+================================================================
+4. BIỆN PHÁP PHÒNG NGỪA
+================================================================
+
+  a) Quy hoạch và làm đất:
+     - Lên liếp cao hoặc trồng trên đất dốc để thoát nước nhanh.
+     - Đào rãnh thoát nước rộng quanh vườn, nhất là trước mùa mưa.
+     - KHÔNG trồng tiêu ở những vùng trũng thấp hay lịch sử nhiễm
+       Phytophthora.
+
+  b) Vệ sinh vườn:
+     - Ngay khi phát hiện cây bệnh: nhổ bỏ, đem tiêu hủy (đốt) và
+       rắc vôi bột vào hố để tiệt trùng nấm trong đất.
+     - Không để nước từ vùng bệnh chảy qua vùng sạch.
+     - Khử trùng dụng cụ bằng cồn 70% hoặc vôi loãng sau mỗi lần dùng.
+
+  c) Phun phòng định kỳ:
+     - Phun và tưới gốc thuốc đặc trị Phytophthora trước mùa mưa và
+       sau mỗi đợt mưa lớn.
+
+================================================================
+5. BIỆN PHÁP HÓA HỌC KHI PHÁT HIỆN BỆNH
+================================================================
+
+KHẨN CẤP — Xử lý ngay khi phát hiện cây đầu tiên bị bệnh:
+
+  a) Hoạt chất Phosphonate (Potassium phosphonate / Fosetyl-Al):
+     - Tên thương mại: Agri-Fos 600 SL, Aliette 80WP, Phosphonate 40 SL.
+     - Đây là nhóm thuốc HIỆU QUẢ NHẤT với Phytophthora theo nghiên
+       cứu phosphonate (Dann et al., 2011).
+     - Fosetyl-Al (Aliette 80WP): 30–40 g/10 lít nước, phun ướt gốc
+       và tưới đất quanh gốc 1–2 lít/gốc.
+     - Potassium phosphonate 600 SL: 5–10 ml/lít nước, phun và tưới
+       gốc, phun 3 lần cách nhau 14 ngày.
+
+  b) Hoạt chất Metalaxyl (phòng và trị Phytophthora):
+     - Tên thương mại: Ridomil Gold 68WG (Metalaxyl 4% + Mancozeb 64%),
+       Mataxyl 500WP.
+     - Liều lượng Ridomil Gold 68WG: 20–25 g/10 lít nước, tưới gốc
+       2–3 lít/gốc.
+     - Phun/tưới khi bệnh mới xuất hiện và lặp lại sau 14 ngày.
+
+  c) Thuốc gốc đồng (phòng bệnh, tiếp xúc):
+     - Copper Oxychloride 50 WP: 30–40 g/10 lít nước, phun phòng gốc
+       cây và đất quanh gốc định kỳ trước mùa mưa.
+     - Bordeaux 0,5–1%: phun phòng định kỳ 3–4 tuần/lần trong mùa mưa.
+
+  d) Hoạt chất Cymoxanil + Mancozeb:
+     - Tên thương mại: Curzate M8 72WP, Curzate M72WP.
+     - Liều lượng: 30–40 g/16 lít nước.
+
+LỊCH PHUN KHUYẾN CÁO:
+  - Phun phòng: Trước mùa mưa (tháng 4) — Copper Oxychloride hoặc
+    Bordeaux tưới gốc.
+  - Khi mưa lớn: Phosphonate phun và tưới gốc ngay sau 2–3 ngày mưa
+    liên tục.
+  - Khi phát hiện bệnh: Metalaxyl (Ridomil) + Phosphonate (Fosetyl-Al)
+    phun ngay, lặp lại sau 7–10 ngày.
+
+================================================================
+6. XỬ LÝ KHẨN CẤP KHI PHÁT HIỆN CÂY BỆNH ĐẦU TIÊN
+================================================================
+
+  BƯỚC 1: Nhổ hoặc cắt ngay cây bệnh, mang ra khỏi vườn và ĐỐT.
+  BƯỚC 2: Rắc vôi bột vào hố cây vừa nhổ, liều 0,5–1 kg vôi/hố.
+  BƯỚC 3: Phun và tưới Fosetyl-Al (Aliette) hoặc Phosphonate toàn bộ
+           khu vực xung quanh bán kính 3–5 m.
+  BƯỚC 4: Không tưới nước từ vùng bệnh sang vùng sạch.
+  BƯỚC 5: Phun lại sau 10–14 ngày và theo dõi sát toàn vườn.
+  BƯỚC 6: Báo cáo cán bộ khuyến nông địa phương nếu bệnh lan rộng.
+
+================================================================
+7. LƯU Ý QUAN TRỌNG
+================================================================
+
+  - Bệnh chết nhanh KHÔNG thể chữa được khi cây đã ngả (héo toàn thân).
+    Chỉ có thể cứu các cây kế cận chưa bị nhiễm.
+  - Phosphonate có thể phun định kỳ như biện pháp phòng bệnh chủ động
+    mà không cần đợi đến khi bệnh xuất hiện.
+  - KHÔNG dùng thuốc Metalaxyl quá nhiều — nấm có thể kháng. Luân phiên
+    với Phosphonate và thuốc đồng.
+  - Trồng lại tiêu sau bệnh phải cải tạo đất hoàn toàn, xử lý nấm trong
+    đất ít nhất 6 tháng trước khi trồng.

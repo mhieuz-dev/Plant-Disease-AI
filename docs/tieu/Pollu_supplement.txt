@@ -1,0 +1,143 @@
+HƯỚNG DẪN PHÒNG TRỪ BỆNH THÁN THƯ HỒ TIÊU - POLLU DISEASE
+(Colletotrichum gloeosporioides)
+================================================================
+Nguồn tổng hợp:
+  - Sở Khoa học và Công nghệ tỉnh Bến Tre. Bệnh thán thư Colletotrichum
+    gloeopsorioides. http://dost-bentre.gov.vn/tin-tuc/637
+  - AgriDrone Vietnam. Bệnh Thán Thư Trên Cây Tiêu: Dấu Hiệu & Cách Xử Lý.
+    https://agridrone.vn/benh-than-thu-tren-cay-tieu/
+  - HappyAgri. Bệnh thán thư (Pollu) trên cây hồ tiêu: Nhận Diện & Biện Pháp
+    Phòng Trị. https://happyagri.com.vn/benh-than-thu-tren-cay-tieu/
+  - Santari. Điều Trị Và Phòng Ngừa Bệnh Thán Thư Trên Cây Tiêu.
+    https://santari.com.vn/benh-than-thu-tren-cay-tieu/
+
+================================================================
+1. TÁC NHÂN GÂY BỆNH VÀ TẦM QUAN TRỌNG
+================================================================
+
+Bệnh thán thư hồ tiêu (còn gọi Pollu Disease) do nấm Colletotrichum
+gloeosporioides gây ra. Đây là một trong những bệnh phổ biến và gây thiệt
+hại nghiêm trọng trên hồ tiêu tại Việt Nam, đặc biệt ở các tỉnh Tây Nguyên,
+Đông Nam Bộ và Bình Phước.
+
+Nấm tồn tại trong tàn dư cây bệnh, đất và lây lan chủ yếu qua:
+  - Nước mưa bắn từ đất lên và gió mang bào tử.
+  - Dụng cụ canh tác, hạt giống, cây con nhiễm bệnh.
+  - Côn trùng môi giới.
+
+================================================================
+2. TRIỆU CHỨNG NHẬN BIẾT
+================================================================
+
+Trên lá:
+  - Xuất hiện đốm nhỏ màu nâu đen hoặc nâu đỏ.
+  - Vết bệnh có viền rõ ràng, xung quanh thường có quầng vàng.
+  - Đốm lan rộng dần, vùng trung tâm chuyển xám hoặc trắng nhạt.
+  - Lá bị bệnh vàng và rụng sớm, ảnh hưởng khả năng quang hợp.
+  - Thường bắt đầu từ chóp lá hoặc mép lá, lan dần vào trong.
+
+Trên cành và thân:
+  - Vết bệnh có hình bầu dục, màu nâu đen.
+  - Gây nứt và khô cành, cành có thể chết và rụng khi bệnh nặng.
+
+Trên hoa và quả (Pollu):
+  - Hoa bị rụng hàng loạt khi nhiễm bệnh.
+  - Quả non xuất hiện đốm nhỏ màu nâu đen, dẫn đến khô, teo và rụng sớm.
+  - Quả trưởng thành nhiễm bệnh bị thối, giảm chất lượng nghiêm trọng.
+  - Đây là nguyên nhân chính gây "Pollu" (quả tiêu lép, không phát triển đủ).
+
+Phân biệt với bệnh chết nhanh (Phytophthora):
+  - Bệnh thán thư: Tiến triển chậm, lá đốm dần, chủ yếu hại lá/quả/cành.
+  - Bệnh chết nhanh: Cây héo rũ nhanh trong vài ngày, thối gốc rễ.
+
+================================================================
+3. ĐIỀU KIỆN PHÁT SINH
+================================================================
+
+  - Thời tiết ẩm ướt, mưa nhiều (đặc biệt mùa mưa tháng 5–11).
+  - Nhiệt độ 25–30°C kết hợp ẩm độ cao > 80%.
+  - Vườn tiêu trồng dày, kém thông thoáng.
+  - Cây suy yếu do thiếu dinh dưỡng, hạn hán hoặc ngập úng.
+  - Giai đoạn ra hoa và đậu quả non là lúc cây dễ nhiễm nhất.
+
+================================================================
+4. BIỆN PHÁP PHÒNG NGỪA
+================================================================
+
+  a) Canh tác:
+     - Trồng tiêu với mật độ hợp lý, tạo thông thoáng tán.
+     - Cắt tỉa cành và lá bệnh, thu gom tiêu hủy (đốt hoặc chôn sâu).
+     - Vệ sinh vườn định kỳ, không để tàn dư lá quả bị bệnh trên mặt đất.
+     - Hệ thống tưới tiêu tốt, tránh để đất ngập úng sau mưa.
+     - Bón phân đầy đủ kali và canxi giúp vỏ quả cứng, hạn chế nấm xâm nhập.
+
+  b) Giống:
+     - Ưu tiên trồng giống tiêu có khả năng kháng bệnh tốt hơn (Vĩnh Linh,
+       Tiêu Lệ Chí) nếu có điều kiện.
+
+================================================================
+5. BIỆN PHÁP HÓA HỌC
+================================================================
+
+Thời điểm phun: Phun trước khi cây ra hoa và tiếp tục phun trong mùa mưa.
+Phun 2–3 đợt, mỗi đợt cách nhau 10–15 ngày.
+
+  a) Thuốc gốc đồng (phun phòng bệnh, tiếp xúc):
+     - Copper oxychloride 50 WP (đồng oxyclorua): 30–40 g/10 lít nước.
+     - Bordeaux (Boocđô) 0,5–1%.
+     - Copper hydroxide (Kocide 53.8 DF): 20–30 g/16 lít nước.
+     - Tác dụng: tạo màng bảo vệ bề mặt, ngăn bào tử nảy mầm.
+
+  b) Carbendazim (Benzimidazole — nội hấp, trị bệnh):
+     - Tên thương mại: Bavistin 50 FL, Carbenzim 500FL, Derosal 50SC,
+       Viben C 50BTN.
+     - Liều lượng Bavistin 50 FL: 10–15 ml/10 lít nước
+       (nồng độ 0,1%), phun 600–800 lít dung dịch/ha.
+     - Liều lượng Carbenzim 500FL: 15–20 ml/16 lít nước.
+     - Phun khi bệnh mới xuất hiện. Phun 2 lần cách nhau 7–10 ngày.
+
+  c) Mancozeb (Dithiocarbamate — tiếp xúc, phổ rộng):
+     - Tên thương mại: Dithane M45 80WP, Forwanil 80WP.
+     - Liều lượng: 25–30 g/16 lít nước.
+     - Thường kết hợp với Carbendazim để tăng hiệu quả phổ rộng.
+
+  d) Difenoconazole (Triazole — nội hấp, phổ rộng):
+     - Tên thương mại: Score 250EC, Dividend 030FS.
+     - Liều lượng Score 250EC: 10–15 ml/16 lít nước.
+     - Hiệu quả cao với nhiều loài Colletotrichum.
+
+  e) Azoxystrobin (Strobilurin — nội hấp + tiếp xúc):
+     - Tên thương mại: Amistar 250SC, Ortiva 250SC.
+     - Liều lượng: 8–10 ml/16 lít nước.
+     - Vừa phòng vừa trị, phổ tác động rộng.
+
+  f) Propiconazole (Triazole):
+     - Tên thương mại: Tilt 250EC, Bumper 25EC.
+     - Liều lượng Tilt 250EC: 10–15 ml/16 lít nước.
+
+LỊCH PHUN ĐỀ XUẤT:
+  Lần 1: Khi cây ra nụ hoa (phun phòng bằng đồng).
+  Lần 2: Sau khi đậu quả 2–3 tuần (phun Carbendazim + Mancozeb).
+  Lần 3: Cách lần 2 khoảng 15 ngày (phun Difenoconazole hoặc Azoxystrobin).
+  Tiếp theo: Phun phòng mỗi 3–4 tuần trong suốt mùa mưa.
+
+================================================================
+6. XỬ LÝ KHI BỆNH NẶNG
+================================================================
+
+  - Cắt bỏ và tiêu hủy toàn bộ cành, lá, quả bị bệnh.
+  - Phun ngay bằng Carbendazim 500FL (15–20 ml/16 lít nước) + Copper
+    oxychloride (30 g/10 lít) kết hợp.
+  - Phun 3 lần liên tiếp, cách 7 ngày/lần.
+  - Bổ sung phân kali (KCl hoặc K2SO4) để tăng sức đề kháng cây.
+  - Kiểm tra và xử lý bệnh cho toàn vườn, không chỉ những cây đã thấy bệnh.
+
+================================================================
+7. LƯU Ý QUAN TRỌNG
+================================================================
+
+  - Luân phiên nhóm thuốc: Benzimidazole ↔ Triazole ↔ Strobilurin ↔ Đồng
+    để tránh kháng thuốc.
+  - Không phun khi trời mưa hoặc chuẩn bị mưa trong 4 giờ tới.
+  - Ghi chép lịch phun và theo dõi hiệu quả sau 7–10 ngày.
+  - Tuân thủ thời gian cách ly trước thu hoạch theo hướng dẫn từng loại thuốc.
