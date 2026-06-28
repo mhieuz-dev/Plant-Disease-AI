@@ -1,0 +1,128 @@
+HƯỚNG DẪN PHÒNG TRỪ BỆNH ĐỐM LÁ PHOMA CÀ PHÊ (Phoma costarricensis)
+================================================================
+Nguồn tổng hợp:
+  - PestNet Fact Sheet #142: Coffee Brown Eye Spot / Phoma Leaf Spot.
+    https://pestnet.org/fact_sheets/coffee_browneye_spot_142.htm
+  - Rogerio Martins et al. (2019). Resistance inducers applied alone or in
+    association with fungicide for the management of leaf rust and brown eye
+    spot of coffee under field conditions. ResearchGate.
+    https://researchgate.net/publication/333511530
+  - Nguyen Thi Thanh Hien (2022). Cách phòng trừ một số bệnh hại trên cây
+    cà phê. Báo Dân Tộc Phát Triển / Vietnamnet.
+    https://dantocphattrien.vietnamnet.vn/cach-phong-tru-mot-so-benh-hai-tren-cay-ca-phe-20225.html
+
+================================================================
+1. TÁC NHÂN GÂY BỆNH
+================================================================
+
+Bệnh đốm lá Phoma (còn gọi: đốm nâu mắt ếch, brown eye spot) do nấm
+Phoma costarricensis (syn. Cercospora coffeicola theo một số tài liệu cũ)
+gây ra. Nấm tồn tại trong tàn dư lá bệnh, đất, và lây lan qua nước mưa
+và gió.
+
+================================================================
+2. TRIỆU CHỨNG NHẬN BIẾT
+================================================================
+
+Trên lá:
+  - Xuất hiện các đốm tròn, màu nâu nhạt đến nâu xám, đường kính 5–15 mm.
+  - Đốm có viền màu nâu đậm rõ ràng, bên ngoài thường có quầng vàng.
+  - Trung tâm đốm già có thể chuyển xám hoặc trắng nhạt.
+  - Các đốm có thể liên kết thành mảng lớn, gây cháy lá.
+  - Lá bệnh vàng và rụng sớm, làm giảm diện tích quang hợp của cây.
+
+Trên quả:
+  - Xuất hiện đốm nâu tương tự trên vỏ quả xanh.
+  - Quả bị ảnh hưởng phát triển kém, dễ nứt, giảm chất lượng nhân cà phê.
+
+Phân biệt với bệnh gỉ sắt:
+  - Bệnh gỉ sắt: đốm bột vàng cam ở mặt DƯỚI lá.
+  - Bệnh Phoma: đốm nâu mắt ếch ở cả mặt TRÊN và DƯỚI lá, có viền rõ.
+
+================================================================
+3. ĐIỀU KIỆN PHÁT SINH VÀ LÂY LAN
+================================================================
+
+  - Bệnh phát triển mạnh trong điều kiện: nhiệt độ 15–25°C, độ ẩm cao,
+    mưa liên tục và sương mù kéo dài.
+  - Phổ biến ở vùng cà phê chè (Arabica) trồng ở độ cao > 1.000 m
+    (vùng núi Tây Nguyên, Lâm Đồng, Gia Lai).
+  - Vườn thiếu dinh dưỡng (đặc biệt thiếu kali và canxi) khiến cây suy yếu,
+    dễ nhiễm bệnh hơn.
+  - Ra hoa-đậu quả là giai đoạn cây dễ nhiễm nhất.
+
+================================================================
+4. BIỆN PHÁP PHÒNG NGỪA
+================================================================
+
+  a) Canh tác:
+     - Bón phân đầy đủ và cân đối, tăng cường kali và canxi.
+     - Cắt tỉa cành thông thoáng, hạn chế ẩm độ tán lá.
+     - Thu gom và tiêu hủy lá rụng bị bệnh (đốt hoặc ủ phân hóa học).
+     - Không để vườn ngập úng.
+
+  b) Thuốc sinh học / hóa chất gốc đồng (phun phòng định kỳ):
+     - Bordeaux (Boocđô) 0,5–1%: phun phòng định kỳ 3–4 tuần/lần.
+     - Copper oxychloride 30 WP (Đồng oxyclorua): 30–40 g/10 lít nước.
+     - Phun 3 lần, bắt đầu từ giai đoạn ra hoa đến khi quả còn xanh.
+
+================================================================
+5. BIỆN PHÁP HÓA HỌC KHI BỆNH ĐÃ XUẤT HIỆN
+================================================================
+
+Nhóm Triazole (nội hấp, hiệu quả trị bệnh cao):
+
+  a) Hoạt chất Tebuconazole:
+     - Tên thương mại: Folicur 250EC, Nativo 750WG (kết hợp Tebuconazole +
+       Trifloxystrobin), Raxil 060FS.
+     - Liều lượng Folicur 250EC: 10–15 ml/16 lít nước.
+     - Hiệu quả: giảm mức độ nghiêm trọng bệnh Phoma 50,9% (nghiên cứu
+       tại Brazil — Martins et al., 2019).
+     - Phun khi bệnh mới xuất hiện (đốm < 5 mm) để hiệu quả tối đa.
+
+  b) Hoạt chất Hexaconazole:
+     - Tên thương mại: Anvil 5SC, Chevin 5SC.
+     - Liều lượng Chevin 5SC: 40–60 ml/16 lít nước (tương đương 1–2 lít/ha).
+     - Phun ướt đẫm cả hai mặt lá.
+
+  c) Hoạt chất Cyproconazole:
+     - Tên thương mại: Alto 100EC, Atemi 10EC.
+     - Liều lượng: 10–15 ml/16 lít nước.
+
+  d) Hoạt chất Propiconazole:
+     - Tên thương mại: Tilt 250EC, Bumper 25EC.
+     - Liều lượng Tilt 250EC: 10–15 ml/16 lít nước.
+
+Nhóm thuốc kết hợp (phổ rộng, vừa phòng vừa trị):
+
+  e) Mancozeb 80 WP:
+     - Liều lượng: 25–30 g/16 lít nước.
+     - Tác dụng bảo vệ bề mặt lá, ngăn bào tử nảy mầm.
+     - Thường kết hợp với Triazole để tăng hiệu quả.
+
+  f) Azoxystrobin 250SC:
+     - Tên thương mại: Amistar 250SC, Ortiva 250SC.
+     - Liều lượng: 8–10 ml/16 lít nước.
+     - Cả phòng lẫn trị, phổ rộng, nội hấp + tiếp xúc.
+
+Thuốc Phosphite (kháng bệnh sinh học):
+  - Phosphite kali 0,25–0,5% (Phosphite 40 hoặc Agri-Fos) phun lá.
+  - Nghiên cứu cho thấy giảm mức độ bệnh đốm Phoma đáng kể,
+    đặc biệt khi kết hợp với Tebuconazole.
+
+LỊCH PHUN KHUYẾN CÁO:
+  - Phun phòng: Bordeaux hoặc Copper oxychloride 3–4 tuần/lần trong
+    mùa mưa (tháng 5–10).
+  - Khi bệnh xuất hiện: Triazole (Tebuconazole/Hexaconazole) phun 2–3 lần,
+    cách nhau 10–14 ngày.
+  - Phun vào sáng sớm hoặc chiều mát, tránh mưa trong 4–6 giờ sau phun.
+
+================================================================
+6. LƯU Ý QUAN TRỌNG
+================================================================
+
+  - Luân phiên nhóm hoạt chất (Triazole ↔ Strobilurin ↔ đồng) để tránh
+    kháng thuốc.
+  - Bổ sung phân bón lá giàu kali và canxi giúp tăng sức đề kháng tự nhiên.
+  - Ở những vùng thường xuyên có sương mù (Đà Lạt, Di Linh), cần phun
+    phòng sớm ngay đầu mùa mưa.

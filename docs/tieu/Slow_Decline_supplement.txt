@@ -1,0 +1,139 @@
+HƯỚNG DẪN PHÒNG TRỪ BỆNH CHẾT CHẬM HỒ TIÊU - SLOW DECLINE
+(Fusarium solani + Radopholus similis)
+================================================================
+Nguồn tổng hợp:
+  - Anandaraj M et al. (2009). Management of slow decline of black pepper
+    caused by Phytophthora capsici and Radopholus similis. Tài liệu
+    116-120 trong hệ thống.
+  - Chet_Cham.pdf — Tài liệu về bệnh chết chậm hồ tiêu.
+  - Sở Nông nghiệp và PTNT tỉnh Bình Phước, Đắk Lắk — hướng dẫn
+    phòng trừ bệnh chết chậm hồ tiêu.
+
+================================================================
+1. TÁC NHÂN GÂY BỆNH (PHỨC HỢP NHIỀU TÁC NHÂN)
+================================================================
+
+Bệnh chết chậm hồ tiêu (Slow Decline / Bệnh vàng lá chết dần) do phức
+hợp tác nhân gây ra, bao gồm:
+
+  a) Tuyến trùng Radopholus similis (tuyến trùng đục rễ):
+     - Loài tuyến trùng ký sinh nội bào, phá hủy rễ cây từ bên trong.
+     - Tạo điều kiện cho nấm xâm nhập vào vết thương rễ.
+
+  b) Nấm Fusarium solani (nấm thối rễ mãn tính):
+     - Tấn công rễ đã bị tuyến trùng làm suy yếu.
+     - Khác với Phytophthora (chết nhanh): Fusarium gây thối dần, chậm hơn.
+
+  c) Yếu tố môi trường bất lợi:
+     - Đất chua, nghèo dinh dưỡng, thoát nước kém.
+     - Cây bị stress nước (khô hoặc úng).
+
+ĐÂY KHÔNG PHẢI bệnh thán thư (Pollu/Colletotrichum) và KHÔNG PHẢI
+bệnh chết nhanh (Phytophthora capsici). Cần phân biệt rõ để điều trị đúng.
+
+================================================================
+2. TRIỆU CHỨNG NHẬN BIẾT
+================================================================
+
+  - Cây vàng lá từ từ, bắt đầu từ các lá già ở phần gốc cành.
+  - Lá nhỏ dần, còi cọc, mất màu xanh tươi.
+  - Cây suy yếu và giảm năng suất dần qua nhiều vụ.
+  - Rễ con bị thối đen, mục nhuyễn từng đoạn nhỏ.
+  - Tiến triển rất chậm: 2–5 năm mới chết hoàn toàn.
+  - KHÔNG có triệu chứng héo toàn thân đột ngột như chết nhanh.
+
+Phân biệt:
+  - Chết chậm: Suy giảm từ từ, mất nhiều tháng đến nhiều năm.
+  - Chết nhanh (Phytophthora): Cây héo đột ngột và chết trong 1 tuần.
+  - Thán thư (Pollu): Chủ yếu hại lá, quả, không thối rễ kiểu này.
+
+================================================================
+3. ĐIỀU KIỆN PHÁT SINH
+================================================================
+
+  - Vườn tiêu lâu năm (> 5 năm) có mật độ tuyến trùng cao trong đất.
+  - Đất chua (pH < 5.5), thiếu dinh dưỡng khoáng.
+  - Cây tiêu trồng gần nhau, rễ nhiều tiếp xúc tạo điều kiện lan tuyến trùng.
+  - Chế độ tưới không hợp lý (tưới quá ít hoặc quá nhiều).
+  - Không bổ sung phân hữu cơ, đất bị bạc màu.
+
+================================================================
+4. BIỆN PHÁP PHÒNG NGỪA
+================================================================
+
+  a) Giống và nguồn giống:
+     - Dùng giống tiêu sạch bệnh, không có tuyến trùng (test tuyến trùng).
+     - Trước khi trồng, ngâm hom giống trong nước nóng 55°C trong 10 phút
+       để diệt tuyến trùng.
+
+  b) Cải tạo đất:
+     - Bón vôi nâng pH đất lên 6,0–6,5 (100–200 kg/ha tùy pH).
+     - Bón phân hữu cơ hoàng mục 2–3 kg/gốc/năm.
+     - Bánh dầu neem (neem cake): bón 1 kg/gốc trước mùa mưa.
+       (Neem cake vừa cải tạo đất vừa ức chế tuyến trùng tự nhiên)
+
+  c) Sinh học:
+     - Bổ sung chế phẩm Trichoderma harzianum vào đất: 50 g/gốc,
+       kết hợp với phân hữu cơ.
+     - Trichoderma ký sinh nấm Fusarium và cải thiện cấu trúc đất.
+
+================================================================
+5. BIỆN PHÁP HÓA HỌC
+================================================================
+
+  a) Diệt tuyến trùng (Nematicide):
+     - Hoạt chất Carbofuran (Furadan 3G): 30–50 g/gốc, rải quanh gốc
+       và tưới nước vào. [CHÚ Ý: độc, cần bảo hộ lao động]
+     - Hoạt chất Ethoprophos (Rugby 10G): 20–30 g/gốc.
+     - Hoạt chất Abamectin 3.6 EC: 10 ml/16 lít nước, tưới gốc
+       để diệt tuyến trùng trong đất.
+
+  b) Diệt nấm Fusarium:
+     - Hoạt chất Carbendazim 500FL: 15–20 ml/16 lít nước, tưới gốc.
+     - Hoạt chất Propiconazole 25 EC: 10–15 ml/16 lít nước, tưới gốc.
+     - Trichoderma harzianum (sinh học): 50 g/gốc trộn với đất xung gốc.
+
+  c) Tổng hợp (đặc biệt hiệu quả theo nghiên cứu):
+     - Kết hợp neem cake 1 kg/gốc + Trichoderma harzianum 50 g/gốc:
+       * Giảm vàng lá, rụng lá đáng kể.
+       * Tăng năng suất tiêu sau 1–2 vụ.
+       * Thân thiện với môi trường, hiệu quả lâu dài.
+     (Theo nghiên cứu Anandaraj et al., tài liệu 116-120)
+
+  d) Phục hồi cây bị bệnh nhẹ:
+     - Cắt bỏ và tiêu hủy các rễ thối đã thấy rõ.
+     - Tưới Carbendazim vào đất quanh gốc.
+     - Phun phân bón lá kích thích sinh trưởng (Amino acid, Fulvic acid)
+       để giúp cây hồi phục.
+     - Bón vôi + phân hữu cơ để cải tạo đất quanh gốc.
+
+================================================================
+6. LỊCH ĐIỀU TRỊ ĐỀ XUẤT (CÂY BỆNH NHẸ ĐẾN TRUNG BÌNH)
+================================================================
+
+  Tháng 1–2 (đầu mùa khô):
+    - Bón vôi bột 200 g/gốc, kết hợp phân lân.
+    - Tưới Abamectin 3.6 EC (10 ml/16 lít) vào đất gốc.
+
+  Tháng 3–4 (trước mùa mưa):
+    - Bón neem cake 1 kg/gốc.
+    - Bón phân hữu cơ 2–3 kg/gốc.
+    - Tưới Trichoderma harzianum 50 g/gốc vào đất.
+
+  Tháng 5–6 (đầu mùa mưa):
+    - Tưới Carbendazim 500FL (15 ml/16 lít) vào đất gốc.
+    - Phun phân bón lá kích thích.
+
+  Theo dõi định kỳ: 1 tháng/lần, kiểm tra màu lá và tình trạng cây.
+
+================================================================
+7. LƯU Ý QUAN TRỌNG
+================================================================
+
+  - Bệnh chết chậm cần kiên nhẫn điều trị nhiều vụ mới thấy cải thiện.
+  - Ưu tiên biện pháp sinh học (Trichoderma + neem cake) vì an toàn và
+    bền vững hơn hóa học.
+  - Kết hợp đồng thời: diệt tuyến trùng + diệt nấm + cải thiện đất.
+  - Đây là bệnh KHÁC HOÀN TOÀN với bệnh chết nhanh — không dùng thuốc
+    Phytophthora (Fosetyl-Al, Metalaxyl) để trị bệnh chết chậm vì
+    không đúng tác nhân gây bệnh.

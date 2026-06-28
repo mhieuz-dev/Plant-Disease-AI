@@ -1,0 +1,123 @@
+HƯỚNG DẪN PHÒNG TRỪ SÂU VẼ BÙA CÀ PHÊ (Leucoptera coffeella)
+================================================================
+Nguồn tổng hợp:
+  - Rocha et al. (2020). Profile of Coffee Crops and Management of the Neotropical
+    Coffee Leaf Miner, Leucoptera coffeella. MDPI Sustainability, 12(19), 8011.
+    https://doi.org/10.3390/su12198011
+  - Marcelo C. Picanço et al. (2002). Insecticide use and organophosphate resistance
+    in Leucoptera coffeella. Bulletin of Entomological Research, 92, 509–516.
+    https://doi.org/10.1079/BER2002173
+  - Sở Nông nghiệp và PTNT tỉnh Gia Lai, Lâm Đồng — khuyến cáo phòng trừ
+    sâu hại cà phê (2022).
+
+================================================================
+1. ĐẶC ĐIỂM GÂY HẠI
+================================================================
+
+Sâu vẽ bùa cà phê do sâu non (bướm đêm Leucoptera coffeella, họ Lyonetiidae)
+đục vào bên trong nhu mô lá, tạo thành các đường hầm ngoằn ngoèo (vẽ bùa) đặc
+trưng dễ nhận biết bằng mắt thường. Vết hầm lúc đầu nhỏ, sau lan rộng thành
+những mảng trắng bạc, khiến lá mất khả năng quang hợp.
+
+Mức độ thiệt hại:
+  - Nhiễm nhẹ (< 20% lá bị hại): ảnh hưởng nhỏ đến sinh trưởng.
+  - Nhiễm nặng (> 50% lá bị hại): cây suy yếu, rụng lá hàng loạt,
+    giảm năng suất 20–40%, thậm chí chết cành.
+
+================================================================
+2. THỜI ĐIỂM XUẤT HIỆN VÀ ĐIỀU KIỆN PHÁT SINH
+================================================================
+
+  - Sâu vẽ bùa phát sinh mạnh nhất vào mùa mưa (tháng 5–10 tại Tây Nguyên),
+    khi cây cà phê đang đợt ra lá non mạnh.
+  - Nhiệt độ 20–28°C và độ ẩm cao (> 75%) là điều kiện lý tưởng cho sâu phát triển.
+  - Vườn trồng dày, thiếu ánh sáng, bón nhiều đạm khiến lá non nhiều → sâu phát
+    triển mạnh hơn.
+  - Mỗi năm sâu có thể gây ra 8–12 thế hệ nối tiếp nhau.
+
+================================================================
+3. NHẬN BIẾT TRIỆU CHỨNG
+================================================================
+
+  a) Giai đoạn sớm:
+     - Lá có các vệt trắng bạc nhỏ (đường hầm mới), thường ở mặt trên lá.
+     - Quan sát thấy trứng nhỏ li ti màu trắng trên mặt lá non.
+
+  b) Giai đoạn nặng:
+     - Các vệt trắng liên kết thành mảng lớn, toàn lá chuyển vàng-nâu.
+     - Lá khô và rụng sớm, cành trơ trụi.
+     - Có thể nhìn thấy sâu non màu vàng nhạt bên trong đường hầm khi soi lá.
+
+================================================================
+4. BIỆN PHÁP PHÒNG NGỪA
+================================================================
+
+  a) Canh tác:
+     - Trồng với mật độ hợp lý, tỉa cành tạo thông thoáng cho vườn.
+     - Bón phân cân đối, hạn chế bón thừa đạm (tạo nhiều lá non dễ nhiễm sâu).
+     - Thu gom và tiêu hủy lá bị hại để cắt vòng đời sâu.
+     - Trồng cây che bóng hợp lý để giảm nhiệt độ và tạo vi khí hậu bất lợi cho sâu.
+
+  b) Sinh học (ưu tiên sử dụng trước):
+     - Bacillus thuringiensis (Bt): phun đều lên lá non khi sâu non mới nở.
+       Liều lượng: 20–30 ml chế phẩm/16 lít nước, phun vào sáng sớm.
+     - Beauveria bassiana (nấm ký sinh sâu): phun 10–15 ml/16 lít nước
+       vào buổi chiều mát, tránh ánh nắng trực tiếp.
+     - Dầu neem (Azadirachta indica) 0,3–0,5%: phun phòng định kỳ 15 ngày/lần.
+     - Bảo vệ thiên địch tự nhiên: ong ký sinh Cirrospilus spp., nhện.
+
+  c) Theo dõi:
+     - Kiểm tra vườn ít nhất 2 lần/tuần trong mùa ra lá non.
+     - Đặt bẫy đèn bắt bướm đêm để theo dõi mật độ quần thể.
+
+================================================================
+5. BIỆN PHÁP HÓA HỌC KHI MẬT ĐỘ CAO
+================================================================
+
+Chỉ phun thuốc hóa học khi mật độ sâu vượt ngưỡng gây hại kinh tế
+(> 30% lá bị hại hoặc quan sát thấy bướm đẻ trứng nhiều trên lá non).
+
+Nhóm thuốc nội hấp / lưu dẫn (hiệu quả cao với sâu đục trong lá):
+
+  a) Hoạt chất Thiamethoxam (nhóm Neonicotinoid):
+     - Tên thương mại phổ biến: Actara 25WG, Tsunami 350SC, Confidor 700 WG.
+     - Liều lượng Actara 25WG: 10–12 g/16 lít nước; phun ướt đều cả hai mặt lá.
+     - Thời gian cách ly: 7 ngày trước thu hoạch.
+     - Tác dụng: diệt sâu non giai đoạn 1–2 tuổi, bảo vệ cây lên đến 14–21 ngày.
+
+  b) Hoạt chất Imidacloprid (nhóm Neonicotinoid):
+     - Tên thương mại: Confidor 700WG, Admire 200OD.
+     - Liều lượng: 8–10 g/16 lít nước, hoặc pha 0,05–0,1% trong nước.
+     - Phun khi phát hiện ổ trứng và sâu non đầu tuổi.
+
+  c) Hoạt chất Emamectin benzoate (nhóm Avermectin):
+     - Tên thương mại: Proclaim 1.9EC, Dylan 2EC, Racemate 1.9EC.
+     - Liều lượng Proclaim 1.9EC: 10–15 ml/16 lít nước.
+     - Đặc tính: tiếp xúc + vị độc, thấm sâu vào lá, diệt sâu trong đường hầm.
+     - Phun khi thấy sâu tuổi 1–2 còn nhỏ, hiệu quả giảm khi sâu đã lớn.
+
+  d) Hoạt chất Abamectin (nhóm Avermectin):
+     - Tên thương mại: Tervigo 020SC, Abatin 5.4EC, Sherpa 10EC.
+     - Liều lượng Tervigo 020SC: 5–8 ml/16 lít nước.
+
+  e) Hoạt chất Chlorantraniliprole (nhóm Diamide):
+     - Tên thương mại: Prevathon 5SC, Dupont Altacor 35WG.
+     - Liều lượng Prevathon 5SC: 10–12 ml/16 lít nước.
+     - Phổ rộng, thân thiện với thiên địch hơn nhóm lân hữu cơ.
+
+KHUYẾN CÁO PHUN:
+  - Phun vào sáng sớm (6–9 giờ) hoặc chiều mát (16–18 giờ).
+  - Phun đều hai mặt lá, đặc biệt mặt dưới nơi sâu trú ẩn.
+  - Phun 2–3 lần, mỗi lần cách nhau 7–10 ngày.
+  - Luân phiên hoạt chất để tránh kháng thuốc.
+  - KHÔNG phun khi nhiệt độ > 35°C hoặc trời sắp mưa.
+
+================================================================
+6. LƯU Ý QUAN TRỌNG
+================================================================
+
+  - Sâu vẽ bùa có thể kháng nhóm lân hữu cơ (Chlorpyrifos, Dimethoate)
+    nếu sử dụng nhiều năm liên tiếp — nên chuyển sang nhóm Neonicotinoid
+    hoặc Diamide.
+  - Ưu tiên phòng trừ tổng hợp (IPM): kết hợp sinh học + hóa học luân phiên.
+  - Ghi chép lịch phun, theo dõi hiệu quả và điều chỉnh liều theo thực tế.
