@@ -1,0 +1,114 @@
+{
+ "ca_phe/05-Article.pdf": [
+  "cafe_Leaf rust"
+ ],
+ "ca_phe/Benh_gi_sat.pdf": [
+  "cafe_Leaf rust"
+ ],
+ "ca_phe/Dom_la_Phoma.pdf": [
+  "cafe_Phoma"
+ ],
+ "ca_phe/Effect_of_resistance_inducers_on_coffee_against_Ph.pdf": [
+  "cafe_Phoma"
+ ],
+ "ca_phe/Gi_sat_1.pdf": [
+  "cafe_Leaf rust"
+ ],
+ "ca_phe/Phoma_supplement.txt": [
+  "cafe_Leaf rust",
+  "cafe_Phoma"
+ ],
+ "ca_phe/Sau_ve_bua.pdf": [
+  "cafe_Miner"
+ ],
+ "ca_phe/Sau_ve_bua_supplement.txt": [
+  "cafe_Miner"
+ ],
+ "ca_phe/Than_thu.pdf": [
+  "cafe_Phoma"
+ ],
+ "ca_phe/flaviob,+309.pdf": [
+  "cafe_Leaf rust"
+ ],
+ "ca_phe/flaviob,+688.pdf": [
+  "cafe_Phoma"
+ ],
+ "ca_phe/flaviob,+952+.pdf": [
+  "cafe_Miner"
+ ],
+ "ca_phe/insects-12-01130.pdf": [
+  "cafe_Miner"
+ ],
+ "lua/11-9-370-345.pdf": [
+  "rice_Leaf scald"
+ ],
+ "lua/2021.pdf": [
+  "rice_Leaf Blast"
+ ],
+ "lua/47_662.pdf": [
+  "rice_Leaf Blast"
+ ],
+ "lua/Chay_bia_la.pdf": [
+  "rice_Leaf scald"
+ ],
+ "lua/Dao_on_la.pdf": [
+  "rice_Leaf Blast"
+ ],
+ "lua/EfficacyoffungicidesforthemanagementofSheathBlightofrice.pdf": [
+  "rice_Sheath Blight"
+ ],
+ "lua/FUNGICIDESHEATHBLIGHTOFRICE.pdf": [
+  "rice_Sheath Blight"
+ ],
+ "lua/JRRarticle2023.pdf": [
+  "rice_Sheath Blight"
+ ],
+ "lua/Kho_van.pdf": [
+  "rice_Sheath Blight"
+ ],
+ "lua/pd-89-1171.pdf": [
+  "rice_Sheath Blight"
+ ],
+ "lua/phyto-04-15-0109-r.pdf": [
+  "rice_Leaf Blast",
+  "rice_Leaf scald"
+ ],
+ "tieu/116-120.pdf": [
+  "tieu_Footrot"
+ ],
+ "tieu/17+-+IJAgriSci+-+FEBRUARY-2026+-+FINAL.pdf": [
+  "tieu_Slow-Decline"
+ ],
+ "tieu/Chet_Cham.pdf": [
+  "tieu_Slow-Decline"
+ ],
+ "tieu/Footrot_supplement.txt": [
+  "tieu_Footrot"
+ ],
+ "tieu/Phosphonatetrials03235408.2011.pdf": [
+  "tieu_Footrot"
+ ],
+ "tieu/PhytophthorafootrotBlackPepper.pdf": [
+  "tieu_Footrot"
+ ],
+ "tieu/Pollu_supplement.txt": [
+  "tieu_Footrot",
+  "tieu_Pollu_Disease"
+ ],
+ "tieu/Slow_Decline_supplement.txt": [
+  "tieu_Footrot",
+  "tieu_Slow-Decline"
+ ],
+ "tieu/Than_thu.pdf": [
+  "tieu_Pollu_Disease"
+ ],
+ "tieu/Thoi_re.pdf": [
+  "tieu_Footrot"
+ ],
+ "tieu/editorjosac,+Journal+editor,+62-123-1-SM.pdf": [
+  "tieu_Pollu_Disease"
+ ],
+ "tieu/sciflora,+Journal+manager,+3.pdf": [
+  "tieu_Pollu_Disease"
+ ]
+}
