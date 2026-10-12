@@ -23,7 +23,24 @@ from services.rag_service import (
     get_display_name,
     is_healthy,
     _vector_stores,
+    detect_crop_from_class,
 )
+from services.safeguards import Safeguards, GROUNDING_RULES
+
+# Safeguards added in revision R1: disease-scoped retrieval, grounding rules in the prompt, and a
+# post-generation check of recommended pesticides against the retrieved passages and the Vietnamese
+# registry (Circular 75/2025/TT-BNNMT as amended by 28/2026/TT-BNNMT). SAFEGUARDS=0 restores the original behaviour.
+SAFEGUARDS = (Safeguards("data/disease_tags.json", "data/pesticide_registry_vn.json")
+              if os.getenv("SAFEGUARDS", "1") == "1" else None)
+
+
+def _retrieve(class_name: str, user_query: str, top_k: int) -> dict:
+    """retrieve_context, re-ranked towards documents tagged with the diagnosed disease when safeguards are on."""
+    crop = detect_crop_from_class(class_name)
+    if SAFEGUARDS and crop in _vector_stores and not is_healthy(class_name):
+        # six passages instead of four: with disease-scoped candidates the extra passages come from the same documents
+        return SAFEGUARDS.scoped_retrieve(_vector_stores[crop], crop, class_name, get_display_name(class_name), user_query, top_k=max(top_k, 6))
+    return retrieve_context(class_name=class_name, user_query=user_query, top_k=top_k)
 
 import torch, timm
 
@@ -133,11 +150,7 @@ async def detect(
         print(f"[GradCAM] {e}")
 
     # 4. RAG — truyền class_name thực tế, không phải display_name
-    rag_result = retrieve_context(
-        class_name=class_name,
-        user_query="",
-        top_k=3,
-    )
+    rag_result = _retrieve(class_name, "", 3)
     session["crop"] = rag_result.get("crop")
 
     # 5. Build prompt + gọi LLM
@@ -155,6 +168,10 @@ async def detect(
     except Exception as e:
         raise HTTPException(500, f"Lỗi ChatGPT: {e}")
 
+    safeguard_flags = None
+    if SAFEGUARDS and rag_result.get("chunks"):
+        solution, safeguard_flags = SAFEGUARDS.post_check(solution, rag_result["chunks"], class_name)
+
     session["history"].append({"role": "assistant", "content": solution})
     session["history"] = trim(session["history"])
 
@@ -170,6 +187,7 @@ async def detect(
         "crop":            rag_result.get("crop"),
         "citations":       rag_result.get("citations", []),
         "solution":        solution,
+        "safeguard_flags": safeguard_flags,
     }
 
 
@@ -194,16 +212,13 @@ async def chat_stream(req: ChatRequest):
 
     rag_result = {}
     if class_name and not is_healthy(class_name):
-        rag_result = retrieve_context(
-            class_name=class_name,
-            user_query=req.question,
-            top_k=4,
-        )
+        rag_result = _retrieve(class_name, req.question, 4)
 
     if rag_result.get("context_str"):
+        rules = GROUNDING_RULES + "\n\n" if SAFEGUARDS else ""
         user_content = (
             f"[Tài liệu tham khảo]\n{rag_result['context_str']}\n\n"
-            f"[Câu hỏi] {req.question}"
+            f"{rules}[Câu hỏi] {req.question}"
         )
     elif class_name:
         display_name = get_display_name(class_name)
@@ -220,6 +235,13 @@ async def chat_stream(req: ChatRequest):
             for chunk in ask_chatgpt_stream(snapshot):
                 full.append(chunk)
                 yield f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n"
+            if SAFEGUARDS and rag_result.get("chunks"):
+                # the text is already streamed, so the check is appended as one closing block
+                _, flags = SAFEGUARDS.post_check("".join(full), rag_result["chunks"], class_name)
+                notes = SAFEGUARDS.summary_notes(flags)
+                if notes:
+                    full.append(notes)
+                    yield f"data: {json.dumps(notes, ensure_ascii=False)}\n\n"
             yield "data: [DONE]\n\n"
             session["history"].append({"role": "assistant", "content": "".join(full)})
             session["history"] = trim(session["history"])
@@ -252,10 +274,11 @@ async def chat(req: ChatRequest):
 
     rag_result = {}
     if class_name and not is_healthy(class_name):
-        rag_result = retrieve_context(class_name=class_name, user_query=req.question, top_k=4)
+        rag_result = _retrieve(class_name, req.question, 4)
 
     if rag_result.get("context_str"):
-        user_content = f"[Tài liệu tham khảo]\n{rag_result['context_str']}\n\n[Câu hỏi] {req.question}"
+        rules = GROUNDING_RULES + "\n\n" if SAFEGUARDS else ""
+        user_content = f"[Tài liệu tham khảo]\n{rag_result['context_str']}\n\n{rules}[Câu hỏi] {req.question}"
     elif class_name:
         user_content = f"[Cây đang mắc: {get_display_name(class_name)}]\n{req.question}"
     else:
@@ -269,6 +292,10 @@ async def chat(req: ChatRequest):
         session["history"].pop()
         raise HTTPException(500, f"Lỗi ChatGPT: {e}")
 
+    safeguard_flags = None
+    if SAFEGUARDS and rag_result.get("chunks"):
+        answer, safeguard_flags = SAFEGUARDS.post_check(answer, rag_result["chunks"], class_name)
+
     session["history"].append({"role": "assistant", "content": answer})
     session["history"] = trim(session["history"])
 
@@ -276,6 +303,7 @@ async def chat(req: ChatRequest):
         "conversation_id": req.conversation_id,
         "answer":          answer,
         "citations":       rag_result.get("citations", []),
+        "safeguard_flags": safeguard_flags,
     }
 
 
