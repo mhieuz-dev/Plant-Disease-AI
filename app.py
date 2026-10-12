@@ -30,8 +30,9 @@ from services.safeguards import Safeguards, GROUNDING_RULES
 # Safeguards added in revision R1: disease-scoped retrieval, grounding rules in the prompt, and a
 # post-generation check of recommended pesticides against the retrieved passages and the Vietnamese
 # registry (Circular 75/2025/TT-BNNMT as amended by 28/2026/TT-BNNMT). SAFEGUARDS=0 restores the original behaviour.
-SAFEGUARDS = (Safeguards("data/disease_tags.json", "data/pesticide_registry_vn.json")
+SAFEGUARDS = (Safeguards("data/disease_tags.json", "data/pesticide_registry_vn.json", "data/docs_meta.json")
               if os.getenv("SAFEGUARDS", "1") == "1" else None)
+ADVISORY_TEMPERATURE = 0.2 if SAFEGUARDS else 0.7   # low temperature for consistent advice when safeguards are on
 
 
 def _retrieve(class_name: str, user_query: str, top_k: int) -> dict:
@@ -161,10 +162,12 @@ async def detect(
         confidence=confidence,
     )
 
+    if SAFEGUARDS and rag_result.get("context_str"):
+        prompt = prompt + "\n\n" + GROUNDING_RULES
     session["history"].append({"role": "user", "content": prompt})
 
     try:
-        solution = ask_chatgpt(session["history"])
+        solution = ask_chatgpt(session["history"], temperature=ADVISORY_TEMPERATURE)
     except Exception as e:
         raise HTTPException(500, f"Lỗi ChatGPT: {e}")
 
@@ -232,7 +235,7 @@ async def chat_stream(req: ChatRequest):
     async def event_gen():
         full = []
         try:
-            for chunk in ask_chatgpt_stream(snapshot):
+            for chunk in ask_chatgpt_stream(snapshot, temperature=ADVISORY_TEMPERATURE):
                 full.append(chunk)
                 yield f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n"
             if SAFEGUARDS and rag_result.get("chunks"):
@@ -287,7 +290,7 @@ async def chat(req: ChatRequest):
     session["history"].append({"role": "user", "content": user_content})
 
     try:
-        answer = ask_chatgpt(session["history"])
+        answer = ask_chatgpt(session["history"], temperature=ADVISORY_TEMPERATURE)
     except Exception as e:
         session["history"].pop()
         raise HTTPException(500, f"Lỗi ChatGPT: {e}")
