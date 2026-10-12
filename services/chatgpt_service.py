@@ -95,23 +95,23 @@ def validate_plant_image(image_bytes: bytes) -> dict:
 # CHAT
 # ============================================================
 
-def ask_chatgpt(messages: list[dict]) -> str:
+def ask_chatgpt(messages: list[dict], temperature: float = 0.7) -> str:
     """Gọi ChatGPT với toàn bộ lịch sử hội thoại."""
     response = client.chat.completions.create(
         model="gpt-4.1-mini",
         messages=[{"role": "system", "content": SYSTEM_PROMPT}] + messages,
-        temperature=0.7,
+        temperature=temperature,
         max_tokens=1000,
     )
     return response.choices[0].message.content
 
 
-def ask_chatgpt_stream(messages: list[dict]) -> Generator[str, None, None]:
+def ask_chatgpt_stream(messages: list[dict], temperature: float = 0.7) -> Generator[str, None, None]:
     """Streaming version — yield từng chunk text."""
     stream = client.chat.completions.create(
         model="gpt-4.1-mini",
         messages=[{"role": "system", "content": SYSTEM_PROMPT}] + messages,
-        temperature=0.7,
+        temperature=temperature,
         max_tokens=1000,
         stream=True,
     )
