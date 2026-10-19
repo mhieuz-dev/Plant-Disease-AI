@@ -23,7 +23,7 @@ from pathlib import Path
 
 CROP_OF = {"cafe": ["cà phê"], "rice": ["lúa"], "tieu": ["hồ tiêu", "tiêu"]}
 PESTS = {"cafe_Leaf rust": ["gỉ sắt", "rỉ sắt"], "cafe_Miner": ["vẽ bùa"], "cafe_Phoma": ["đốm lá", "phoma", "khô cành"],
-         "rice_Leaf Blast": ["đạo ôn"], "rice_Leaf scald": ["cháy bìa lá", "bạc lá", "cháy lá"], "rice_Sheath Blight": ["khô vằn"],
+         "rice_Leaf Blast": ["đạo ôn"], "rice_Leaf scald": ["leaf scald", "bỏng lá"], "rice_Sheath Blight": ["khô vằn"],
          "tieu_Footrot": ["chết nhanh", "thối gốc", "thối rễ", "phytophthora"], "tieu_Pollu_Disease": ["thán thư"],
          "tieu_Slow-Decline": ["chết chậm", "tuyến trùng", "thối rễ"]}
 DOSE = re.compile(r"(\d+(?:[.,]\d+)?)\s*(ml|g|gam|gram|kg|lít|lit|l|%)\s*(?:/|\s*(?:cho|trên|mỗi|pha)\s*)?\s*"
