@@ -3,7 +3,7 @@ import json
 
 BASE_URL = "http://localhost:8000"
 
-# 20 câu hỏi test — giữ nguyên thứ tự này
+# 20 câu hỏi test - giữ nguyên thứ tự này
 questions = [
     ("cafe_Leaf rust",   "Bệnh gỉ sắt cà phê dùng thuốc gì và phun liều lượng bao nhiêu?"),
     ("cafe_Leaf rust",   "Bệnh gỉ sắt cà phê phòng ngừa như thế nào?"),
@@ -66,4 +66,4 @@ if __name__ == "__main__":
     # Lưu ra file để chấm điểm
     with open("rag_results.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print("\n✅ Đã lưu rag_results.json")
+    print("\nĐã lưu rag_results.json")

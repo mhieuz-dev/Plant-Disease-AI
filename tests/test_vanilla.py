@@ -3,7 +3,7 @@ import json
 
 BASE_URL = "http://localhost:8000"
 
-# 20 câu hỏi — KHÔNG có prefix class để RAG không chạy (vanilla mode)
+# 20 câu hỏi - KHÔNG có prefix class để RAG không chạy (vanilla mode)
 questions = [
     "Bệnh gỉ sắt cà phê dùng thuốc gì và phun liều lượng bao nhiêu?",
     "Bệnh gỉ sắt cà phê phòng ngừa như thế nào?",
@@ -40,7 +40,7 @@ def run_vanilla():
 
         r = requests.post(f"{BASE_URL}/chat", json={
             "conversation_id": conv_id,
-            "question": question  # Không có prefix class → RAG không chạy
+            "question": question  # Không có prefix class -> RAG không chạy
         })
         data = r.json()
         answer    = data.get("answer", "")
@@ -64,4 +64,4 @@ if __name__ == "__main__":
     results = run_vanilla()
     with open("vanilla_results.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print("\n✅ Đã lưu vanilla_results.json")
+    print("\nĐã lưu vanilla_results.json")

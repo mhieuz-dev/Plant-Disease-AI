@@ -1,5 +1,5 @@
 """
-app_v3.py — Plant Doctor AI (RAG + GradCAM)
+app_v3.py - Plant Doctor AI (RAG + GradCAM)
 """
 
 import os
@@ -66,7 +66,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Plant Doctor AI", version="3.0", lifespan=lifespan)
 
 
-# ── SESSION ────────────────────────────────────────────────────────────────────
+# -- SESSION --------------------------------------------------------------------
 
 sessions: dict[str, dict] = {}
 MAX_HISTORY = 20
@@ -80,14 +80,14 @@ def trim(h: list) -> list:
     return h[-MAX_HISTORY:] if len(h) > MAX_HISTORY else h
 
 
-# ── MODELS ─────────────────────────────────────────────────────────────────────
+# -- MODELS ---------------------------------------------------------------------
 
 class ChatRequest(BaseModel):
     conversation_id: str
     question: str
 
 
-# ── /conversation/new ──────────────────────────────────────────────────────────
+# -- /conversation/new ----------------------------------------------------------
 
 @app.post("/conversation/new")
 async def new_conversation():
@@ -96,7 +96,7 @@ async def new_conversation():
     return {"conversation_id": cid}
 
 
-# ── /detect ────────────────────────────────────────────────────────────────────
+# -- /detect --------------------------------------------------------------------
 
 @app.post("/detect")
 async def detect(
@@ -150,7 +150,7 @@ async def detect(
     except Exception as e:
         print(f"[GradCAM] {e}")
 
-    # 4. RAG — truyền class_name thực tế, không phải display_name
+    # 4. RAG - truyền class_name thực tế, không phải display_name
     rag_result = _retrieve(class_name, "", 3)
     session["crop"] = rag_result.get("crop")
 
@@ -194,7 +194,7 @@ async def detect(
     }
 
 
-# ── /chat/stream ───────────────────────────────────────────────────────────────
+# -- /chat/stream ---------------------------------------------------------------
 
 def _extract_class_from_question(question: str) -> Optional[str]:
     m = re.match(r'\[Cây đang mắc bệnh:\s*(.+?)\]', question)
@@ -261,7 +261,7 @@ async def chat_stream(req: ChatRequest):
     )
 
 
-# ── /chat (fallback) ───────────────────────────────────────────────────────────
+# -- /chat (fallback) -----------------------------------------------------------
 
 @app.post("/chat")
 async def chat(req: ChatRequest):
@@ -310,7 +310,7 @@ async def chat(req: ChatRequest):
     }
 
 
-# ── Admin & Health ─────────────────────────────────────────────────────────────
+# -- Admin & Health -------------------------------------------------------------
 
 @app.post("/admin/rebuild-indexes")
 async def rebuild(secret: str = ""):

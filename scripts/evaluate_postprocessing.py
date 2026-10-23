@@ -1,6 +1,6 @@
 """
 evaluate_postprocessing.py
-──────────────────────────
+--------------------------
 So sánh F1-score của cafe_Leaf_rust và cafe_Miner
 TRƯỚC và SAU color post-processing.
 
@@ -9,7 +9,7 @@ Cách chạy:
 
 Cấu trúc thư mục test (Roboflow standard):
     test/
-      cafe_Leaf rust/   ← tên thư mục = tên class
+      cafe_Leaf rust/   <- tên thư mục = tên class
         img1.jpg
         img2.jpg ...
       cafe_Miner/
@@ -31,17 +31,17 @@ import cv2
 from PIL import Image
 from sklearn.metrics import f1_score, recall_score, precision_score, classification_report
 
-# ── Hyperparameter post-processing ──────────────────────────────────────────
-CONFIDENCE_GAP_THRESHOLD = 0.25   # Chênh lệch confidence < 25% → kích hoạt post-proc
+# -- Hyperparameter post-processing ------------------------------------------
+CONFIDENCE_GAP_THRESHOLD = 0.25   # Chênh lệch confidence < 25% -> kích hoạt post-proc
 ORANGE_HUE_MIN  = 10              # HSV Hue tối thiểu (độ) cho màu cam-vàng của Rust
 ORANGE_HUE_MAX  = 45              # HSV Hue tối đa
 ORANGE_SAT_MIN  = 80              # Saturation tối thiểu (0-255)
-ORANGE_RATIO_THRESHOLD = 0.12     # θ: nếu ≥ 12% pixel ROI là cam-vàng → Rust
+ORANGE_RATIO_THRESHOLD = 0.12     # θ: nếu ≥ 12% pixel ROI là cam-vàng -> Rust
 
 TARGET_CLASSES = ["cafe_Leaf rust", "cafe_Miner"]
 
 
-# ── Load model ───────────────────────────────────────────────────────────────
+# -- Load model ---------------------------------------------------------------
 def load_model(ckpt_path="best_mobilevit.pth"):
     ckpt    = torch.load(ckpt_path, map_location="cpu")
     classes = ckpt["classes"]
@@ -58,7 +58,7 @@ TRANSFORM = transforms.Compose([
 ])
 
 
-# ── GradCAM (inline, không gọi gradcam_service để tránh dependency) ──────────
+# -- GradCAM (inline, không gọi gradcam_service để tránh dependency) ----------
 def get_gradcam_bbox(model, input_tensor, target_idx, orig_size):
     last_conv = None
     for _, m in model.named_modules():
@@ -84,7 +84,7 @@ def get_gradcam_bbox(model, input_tensor, target_idx, orig_size):
     return cam_resized                # float32 [0,1] kích thước ảnh gốc
 
 
-# ── Color post-processing ────────────────────────────────────────────────────
+# -- Color post-processing ----------------------------------------------------
 def orange_yellow_ratio_in_bbox(img_rgb_np, cam_map):
     """Tính tỷ lệ pixel cam-vàng trong vùng GradCAM bbox (ngưỡng 50%)."""
     mask = (cam_map >= 0.5).astype(np.uint8)
@@ -133,7 +133,7 @@ def postprocess_prediction(pred_class, probs, classes, img_rgb_np,
     if gap >= CONFIDENCE_GAP_THRESHOLD:
         return pred_class              # Gap đủ lớn, tin tưởng model
 
-    # Trường hợp mơ hồ → dùng color analysis
+    # Trường hợp mơ hồ -> dùng color analysis
     h, w = img_rgb_np.shape[:2]
     dominant_idx = rust_idx if p_rust >= p_miner else miner_idx
     cam = get_gradcam_bbox(model, input_tensor, dominant_idx, (w, h))
@@ -145,7 +145,7 @@ def postprocess_prediction(pred_class, probs, classes, img_rgb_np,
         return "cafe_Miner"
 
 
-# ── Evaluation loop ──────────────────────────────────────────────────────────
+# -- Evaluation loop ----------------------------------------------------------
 def evaluate(test_dir, model, classes):
     y_true_before = []
     y_pred_before = []
@@ -183,13 +183,13 @@ def evaluate(test_dir, model, classes):
 
             # Chỉ ghi nhận nếu prediction là Rust hoặc Miner
             if pred_class not in TARGET_CLASSES:
-                # Model dự đoán class khác hẳn → bỏ qua (không liên quan)
+                # Model dự đoán class khác hẳn -> bỏ qua (không liên quan)
                 # Nhưng vẫn ghi là sai cho before (tùy cách tính)
                 pred_class_for_eval = pred_class
             else:
                 pred_class_for_eval = pred_class
 
-            # Post-processing (cần gradient → không dùng no_grad)
+            # Post-processing (cần gradient -> không dùng no_grad)
             inp_grad = TRANSFORM(img_pil).unsqueeze(0)
             inp_grad.requires_grad_(False)
             postproc_class = postprocess_prediction(
@@ -207,7 +207,7 @@ def evaluate(test_dir, model, classes):
     return y_true_before, y_pred_before, y_pred_after, triggered_count
 
 
-# ── Main ─────────────────────────────────────────────────────────────────────
+# -- Main ---------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--test_dir", default="test",
@@ -241,14 +241,14 @@ def main():
     prec_before  = precision_score(y_true, y_before, labels=labels, average=None, zero_division=0)
     prec_after   = precision_score(y_true, y_after,  labels=labels, average=None, zero_division=0)
 
-    print("\n┌──────────────────────┬──────────────────────────────┬──────────────────────────────┐")
-    print("│ Class                │ WITHOUT post-processing      │ WITH post-processing         │")
-    print("│                      │ Prec / Recall / F1           │ Prec / Recall / F1           │")
-    print("├──────────────────────┼──────────────────────────────┼──────────────────────────────┤")
+    print("\n+----------------------+------------------------------+------------------------------+")
+    print("| Class                | WITHOUT post-processing      | WITH post-processing         |")
+    print("|                      | Prec / Recall / F1           | Prec / Recall / F1           |")
+    print("+----------------------+------------------------------+------------------------------+")
     for i, cls in enumerate(labels):
-        print(f"│ {cls:<20} │ {prec_before[i]:.3f} / {rec_before[i]:.3f} / {f1_before[i]:.3f}        "
-              f"│ {prec_after[i]:.3f} / {rec_after[i]:.3f} / {f1_after[i]:.3f}        │")
-    print("└──────────────────────┴──────────────────────────────┴──────────────────────────────┘")
+        print(f"| {cls:<20} | {prec_before[i]:.3f} / {rec_before[i]:.3f} / {f1_before[i]:.3f}        "
+              f"| {prec_after[i]:.3f} / {rec_after[i]:.3f} / {f1_after[i]:.3f}        |")
+    print("+----------------------+------------------------------+------------------------------+")
 
     # Full report
     print("\n--- Full report BEFORE ---")
@@ -276,7 +276,7 @@ def main():
     with open("postproc_results.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
     print("\n[OK] Đã lưu kết quả vào postproc_results.json")
-    print("     → Dùng các số liệu này điền vào bảng tab:postproc trong paper!")
+    print("     -> Dùng các số liệu này điền vào bảng tab:postproc trong paper!")
 
 
 if __name__ == "__main__":
