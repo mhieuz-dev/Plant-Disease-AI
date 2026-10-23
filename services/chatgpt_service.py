@@ -29,7 +29,7 @@ Nếu câu hỏi ngoài phạm vi nông nghiệp, hãy lịch sự từ chối v
 
 
 # ============================================================
-# VALIDATE ẢNH — dùng GPT-4 Vision
+# VALIDATE ẢNH - dùng GPT-4 Vision
 # ============================================================
 
 def validate_plant_image(image_bytes: bytes) -> dict:
@@ -107,7 +107,7 @@ def ask_chatgpt(messages: list[dict], temperature: float = 0.7) -> str:
 
 
 def ask_chatgpt_stream(messages: list[dict], temperature: float = 0.7) -> Generator[str, None, None]:
-    """Streaming version — yield từng chunk text."""
+    """Streaming version - yield từng chunk text."""
     stream = client.chat.completions.create(
         model="gpt-4.1-mini",
         messages=[{"role": "system", "content": SYSTEM_PROMPT}] + messages,

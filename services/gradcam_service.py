@@ -1,14 +1,14 @@
 """
 gradcam_service.py
-──────────────────
+------------------
 Tạo GradCAM heatmap để nhận diện và tô màu vùng bệnh trên ảnh cây trồng.
 Hỗ trợ cả GradCAM thuần (register_hook) lẫn CBAM (nếu model có).
 
 Cách dùng:
     result = generate_gradcam(image_bytes, model, classes, predicted_idx)
-    # result["heatmap_b64"] → ảnh heatmap base64 để trả về Flutter
-    # result["bbox"]        → bounding box vùng bệnh nổi bật nhất
-    # result["coverage"]    → % diện tích bị ảnh hưởng
+    # result["heatmap_b64"] -> ảnh heatmap base64 để trả về Flutter
+    # result["bbox"]        -> bounding box vùng bệnh nổi bật nhất
+    # result["coverage"]    -> % diện tích bị ảnh hưởng
 """
 
 import io
@@ -20,7 +20,7 @@ import torchvision.transforms as transforms
 from PIL import Image, ImageDraw, ImageFilter
 
 
-# ── TRANSFORM khớp với predict1.py ────────────────────────────────────────────
+# -- TRANSFORM khớp với predict1.py --------------------------------------------
 TRANSFORM = transforms.Compose([
     transforms.Resize((288, 288)),
     transforms.CenterCrop(256),
@@ -33,7 +33,7 @@ TRANSFORM = transforms.Compose([
 def _get_last_conv_layer(model):
     """
     Tự động tìm lớp Conv2d cuối cùng trong model.
-    MobileViT có lớp conv ở cuối encoder — đây là nơi tốt nhất để hook.
+    MobileViT có lớp conv ở cuối encoder - đây là nơi tốt nhất để hook.
     """
     last_conv = None
     for name, module in model.named_modules():
@@ -63,27 +63,27 @@ def generate_gradcam(
     classes : list[str]
         Danh sách tên lớp (trùng với ckpt["classes"]).
     target_idx : int | None
-        Index lớp muốn visualize. None → dùng lớp có score cao nhất.
+        Index lớp muốn visualize. None -> dùng lớp có score cao nhất.
     alpha : float
-        Độ trong suốt khi overlay heatmap lên ảnh gốc (0–1).
+        Độ trong suốt khi overlay heatmap lên ảnh gốc (0-1).
 
     Returns
     -------
     dict với các key:
-        heatmap_b64  : str   – base64 PNG của ảnh overlay
-        raw_map_b64  : str   – base64 PNG của heatmap thuần (không overlay)
-        bbox         : dict  – {"x","y","w","h"} bounding box vùng nổi bật
-        coverage_pct : float – % diện tích ảnh bị đánh dấu (ngưỡng 50%)
+        heatmap_b64  : str   - base64 PNG của ảnh overlay
+        raw_map_b64  : str   - base64 PNG của heatmap thuần (không overlay)
+        bbox         : dict  - {"x","y","w","h"} bounding box vùng nổi bật
+        coverage_pct : float - % diện tích ảnh bị đánh dấu (ngưỡng 50%)
         predicted_class : str
         confidence   : float
     """
-    # ── 1. Chuẩn bị ảnh ───────────────────────────────────────────────────────
+    # -- 1. Chuẩn bị ảnh -------------------------------------------------------
     original_img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
     orig_w, orig_h = original_img.size
 
     input_tensor = TRANSFORM(original_img).unsqueeze(0)  # [1, 3, 256, 256]
 
-    # ── 2. Hook để bắt feature map và gradient ────────────────────────────────
+    # -- 2. Hook để bắt feature map và gradient --------------------------------
     _, last_conv = _get_last_conv_layer(model)
 
     activations = {}
@@ -98,7 +98,7 @@ def generate_gradcam(
     fh = last_conv.register_forward_hook(forward_hook)
     bh = last_conv.register_full_backward_hook(backward_hook)
 
-    # ── 3. Forward pass ───────────────────────────────────────────────────────
+    # -- 3. Forward pass -------------------------------------------------------
     model.eval()
     output = model(input_tensor)  # [1, num_classes]
     probs = F.softmax(output, dim=1)
@@ -110,7 +110,7 @@ def generate_gradcam(
     if target_idx is None:
         target_idx = pred_idx.item()
 
-    # ── 4. Backward pass (tính gradient của score → feature map) ──────────────
+    # -- 4. Backward pass (tính gradient của score -> feature map) --------------
     model.zero_grad()
     score = output[0, target_idx]
     score.backward()
@@ -118,8 +118,8 @@ def generate_gradcam(
     fh.remove()
     bh.remove()
 
-    # ── 5. Tính GradCAM weights ───────────────────────────────────────────────
-    # GAP của gradient theo không gian → weight cho mỗi kênh
+    # -- 5. Tính GradCAM weights -----------------------------------------------
+    # GAP của gradient theo không gian -> weight cho mỗi kênh
     grads = gradients["value"]   # [1, C, H, W]
     acts  = activations["value"] # [1, C, H, W]
 
@@ -134,17 +134,17 @@ def generate_gradcam(
     else:
         cam = torch.zeros_like(cam)
 
-    # ── 6. Resize CAM về kích thước ảnh gốc ──────────────────────────────────
+    # -- 6. Resize CAM về kích thước ảnh gốc ----------------------------------
     cam_np = cam.squeeze().cpu().numpy()  # [H_feat, W_feat]
     cam_pil = Image.fromarray((cam_np * 255).astype(np.uint8))
     cam_pil = cam_pil.resize((orig_w, orig_h), Image.BILINEAR)
     cam_pil = cam_pil.filter(ImageFilter.GaussianBlur(radius=3))
     cam_array = np.array(cam_pil) / 255.0  # [0, 1] float
 
-    # ── 7. Tạo heatmap màu (COLORMAP_JET kiểu thủ công) ──────────────────────
+    # -- 7. Tạo heatmap màu (COLORMAP_JET kiểu thủ công) ----------------------
     heatmap_colored = _apply_jet_colormap(cam_array)  # [H, W, 3] uint8
 
-    # ── 8. Overlay lên ảnh gốc ────────────────────────────────────────────────
+    # -- 8. Overlay lên ảnh gốc ------------------------------------------------
     orig_np = np.array(original_img)
     overlay = (
         (1 - alpha) * orig_np.astype(np.float32) +
@@ -153,7 +153,7 @@ def generate_gradcam(
 
     overlay_img = Image.fromarray(overlay)
 
-    # ── 9. Tính bounding box vùng nổi bật (ngưỡng 50%) ───────────────────────
+    # -- 9. Tính bounding box vùng nổi bật (ngưỡng 50%) -----------------------
     threshold = 0.5
     mask = (cam_array >= threshold).astype(np.uint8)
     bbox = _compute_bbox(mask)
@@ -172,7 +172,7 @@ def generate_gradcam(
     else:
         overlay_with_box = overlay_img
 
-    # ── 10. Encode base64 ─────────────────────────────────────────────────────
+    # -- 10. Encode base64 -----------------------------------------------------
     heatmap_b64 = _img_to_base64(overlay_with_box)
     raw_map_b64 = _img_to_base64(Image.fromarray(heatmap_colored))
 
@@ -186,11 +186,11 @@ def generate_gradcam(
     }
 
 
-# ── HELPERS ────────────────────────────────────────────────────────────────────
+# -- HELPERS --------------------------------------------------------------------
 
 def _apply_jet_colormap(cam: np.ndarray) -> np.ndarray:
     """
-    Áp JET colormap thủ công (xanh dương → xanh lá → vàng → đỏ).
+    Áp JET colormap thủ công (xanh dương -> xanh lá -> vàng -> đỏ).
     cam: float array [H, W] trong [0, 1]
     Returns: uint8 array [H, W, 3]
     """
