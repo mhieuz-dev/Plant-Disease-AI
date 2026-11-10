@@ -6,6 +6,19 @@ This repository accompanies the manuscript "An Intelligent Plant Disease Diagnos
 
 **Disclaimer.** This is a research prototype that has not been validated in the field. Its advice, in particular product names and doses, must be confirmed with a plant protection officer and the product label before use.
 
+## Example output
+
+Each pair shows the leaf photo (left) and the diagnosis returned by the server as shown in the mobile client (right): predicted disease, confidence, and the Grad-CAM heatmap, where red marks the regions that most influenced the prediction.
+
+<p align="center">
+  <img src="images/gradcam_rice.png" width="720" alt="Rice sheath blight: leaf photo and Grad-CAM heatmap">
+  <br><em>Rice, sheath blight</em><br><br>
+  <img src="images/gradcam_coffee.png" width="720" alt="Coffee Phoma leaf spot: leaf photo and Grad-CAM heatmap">
+  <br><em>Coffee, Phoma leaf spot</em><br><br>
+  <img src="images/gradcam_pepper.png" width="600" alt="Black pepper foot rot: leaf photo and Grad-CAM heatmap">
+  <br><em>Black pepper, foot rot</em>
+</p>
+
 ## Disease classes
 
 | Crop | Class labels |
