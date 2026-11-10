@@ -18,3 +18,6 @@ faiss_indexes/
 # Output / result files
 *_results.json
 postproc_results.json
+
+# Third-party documents of the advisory corpus are not redistributed (see docs/SOURCES.md)
+docs/**/*.pdf

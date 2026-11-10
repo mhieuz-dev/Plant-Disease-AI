@@ -54,7 +54,7 @@ The implementation is in `services/safeguards.py` and `app.py`. The check does n
 | `services/chatgpt_service.py` | Image validation and advisory generation with GPT-4.1-mini |
 | `services/safeguards.py` | Advisory safeguards |
 | `data/` | Disease tags, document titles, and the pesticide registry used by the safeguards |
-| `docs/` | Advisory corpus, one folder per crop |
+| `docs/` | Advisory corpus, one folder per crop; `docs/SOURCES.md` lists the third-party documents to download |
 | `tests/test_rag.py`, `tests/test_vanilla.py` | Scripts that submit the 20 evaluation questions with and without retrieval |
 | `scripts/evaluate_postprocessing.py` | Evaluation of the colour-based leaf miner and leaf rust post-processing rule |
 | `images/` | Example Grad-CAM figures |
@@ -73,7 +73,7 @@ pip install fastapi uvicorn python-multipart python-dotenv pydantic \
 cp .env.example .env
 ```
 
-Set `OPENAI_API_KEY` and a private `ADMIN_SECRET` in `.env`, and place `best_mobilevit.pth` in the repository root.
+Set `OPENAI_API_KEY` and a private `ADMIN_SECRET` in `.env`, and place `best_mobilevit.pth` in the repository root. Download the documents listed in [`docs/SOURCES.md`](docs/SOURCES.md) into `docs/<crop>/` under the file names given there; without them the advisor retrieves only from the supplements written by the authors.
 
 ## Usage
 
@@ -108,7 +108,11 @@ An audit of the merged public dataset found that 37.3% of the test images in the
 
 ## Data sources
 
-The images come from public datasets cited in the manuscript and are not redistributed here. The documents in `docs/` are publications and extension materials from their respective authors and publishers, collected for research use. The pesticide registry in `data/` was compiled from Circulars 75/2025/TT-BNNMT and 28/2026/TT-BNNMT of the Ministry of Agriculture and Environment of Vietnam.
+The images come from public datasets cited in the manuscript and are not redistributed here. The advisory documents are publications and extension materials from their respective authors and publishers. They are not redistributed here; [`docs/SOURCES.md`](docs/SOURCES.md) lists each one with its DOI where available. The pesticide registry in `data/` was compiled from Circulars 75/2025/TT-BNNMT and 28/2026/TT-BNNMT of the Ministry of Agriculture and Environment of Vietnam.
+
+## License
+
+The source code is released under the [MIT License](LICENSE). The license does not cover the third-party documents listed in `docs/SOURCES.md`, the public image datasets, or the model weights.
 
 ## Contact
 
